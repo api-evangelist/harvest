@@ -1,0 +1,94 @@
+{
+    "name": "Harvest",
+    "description": "Simple time tracking, fast online invoicing, and powerful reporting software. Simplify employee timesheets and billing. Get started for free.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/421-harvest.jpg",
+    "tags": [
+        "accounting",
+        "api provider",
+        "contacts",
+        "have api",
+        "profile",
+        "projects",
+        "target",
+        "tasks"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/harvest\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Harvest",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/421-harvest.jpg",
+            "humanURL": "http:\/\/www.getharvest.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/harvest-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Base",
+            "url": "https:\/\/www.getharvest.com\/api\/"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/www.getharvest.com\/blog"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/feeds2.feedburner.com\/harvest"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/harvest"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/harvest"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/www.getharvest.com\/api\/"
+        },
+        {
+            "type": "Email",
+            "url": "support@harvestapp.com"
+        },
+        {
+            "type": "Email",
+            "url": "sales@harvestapp.com"
+        },
+        {
+            "type": "Email",
+            "url": "privacy@getharvest.com"
+        },
+        {
+            "type": "Email",
+            "url": "tos@getharvest.com"
+        },
+        {
+            "type": "Email",
+            "url": "press@getharvest.com"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/harvesthq"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/harvest"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.getharvest.com"
+        }
+    ]
+}
