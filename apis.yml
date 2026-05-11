@@ -1,0 +1,73 @@
+aid: harvest
+name: Harvest
+description: >-
+  Harvest is a cloud-based time tracking, project management, expense tracking,
+  and invoicing platform used by agencies, consultancies, and professional
+  services teams to track billable hours, manage budgets, and bill clients.
+  The platform provides reporting on team utilization, project profitability,
+  and budget burn, and integrates with tools like Asana, Trello, Slack, and
+  QuickBooks. Harvest's REST API v2 provides full programmatic access to
+  clients, projects, tasks, time entries, expenses, invoices, estimates,
+  and users using OAuth 2.0 or Personal Access Token authentication.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Time Tracking
+  - Project Management
+  - Invoicing
+  - Expense Tracking
+  - Timesheets
+  - Professional Services
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/harvest/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: harvest:api-v2
+    name: Harvest API v2
+    description: >-
+      REST API for managing clients, projects, tasks, time entries, expenses,
+      invoices, estimates, and users in Harvest. Supports OAuth 2.0 and
+      Personal Access Token authentication, requires a Harvest-Account-Id
+      header, and uses standard JSON request/response over HTTPS.
+    humanURL: https://help.getharvest.com/api-v2/
+    baseURL: https://api.harvestapp.com/v2
+    tags:
+      - Time Tracking
+      - Project Management
+      - Invoicing
+      - Expense Tracking
+      - Timesheets
+      - OAuth 2.0
+      - Personal Access Token
+    properties:
+      - type: Documentation
+        url: https://help.getharvest.com/api-v2/
+      - type: Authentication
+        url: https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/
+      - type: Overview
+        url: https://help.getharvest.com/api-v2/introduction/overview/general/
+
+common:
+  - type: Website
+    url: https://www.getharvest.com
+  - type: Documentation
+    url: https://help.getharvest.com/api-v2/
+  - type: Pricing
+    url: https://www.getharvest.com/pricing
+  - type: Sign Up
+    url: https://id.getharvest.com/signup
+  - type: Blog
+    url: https://www.getharvest.com/blog
+  - type: Support
+    url: https://help.getharvest.com
+  - type: Status
+    url: https://www.harveststatus.com
+  - type: GitHub Organization
+    url: https://github.com/harvesthq
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/harvest
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
