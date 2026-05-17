@@ -56,15 +56,15 @@ common:
     url: https://help.getharvest.com/api-v2/
   - type: Pricing
     url: https://www.getharvest.com/pricing
-  - type: Sign Up
+  - type: SignUp
     url: https://id.getharvest.com/signup
   - type: Blog
     url: https://www.getharvest.com/blog
   - type: Support
     url: https://help.getharvest.com
-  - type: Status
+  - type: StatusPage
     url: https://www.harveststatus.com
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/harvesthq
   - type: LinkedIn
     url: https://www.linkedin.com/company/harvest
