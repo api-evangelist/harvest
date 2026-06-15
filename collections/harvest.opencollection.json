@@ -1,0 +1,967 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Harvest API v2",
+    "version": "2.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "TimeEntries",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List time entries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/time_entries"
+          },
+          "docs": "List time entries"
+        },
+        {
+          "info": {
+            "name": "Create a time entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.harvestapp.com/v2/time_entries"
+          },
+          "docs": "Create a time entry"
+        },
+        {
+          "info": {
+            "name": "Retrieve a time entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/time_entries/:time_entry_id",
+            "params": [
+              {
+                "name": "time_entry_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a time entry"
+        },
+        {
+          "info": {
+            "name": "Update a time entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/time_entries/:time_entry_id",
+            "params": [
+              {
+                "name": "time_entry_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update a time entry"
+        },
+        {
+          "info": {
+            "name": "Delete a time entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.harvestapp.com/v2/time_entries/:time_entry_id",
+            "params": [
+              {
+                "name": "time_entry_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a time entry"
+        },
+        {
+          "info": {
+            "name": "Restart a stopped time entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/time_entries/:time_entry_id/restart",
+            "params": [
+              {
+                "name": "time_entry_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Restart a stopped time entry"
+        },
+        {
+          "info": {
+            "name": "Stop a running time entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/time_entries/:time_entry_id/stop",
+            "params": [
+              {
+                "name": "time_entry_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Stop a running time entry"
+        },
+        {
+          "info": {
+            "name": "Remove external reference from a time entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.harvestapp.com/v2/time_entries/:time_entry_id/external_reference",
+            "params": [
+              {
+                "name": "time_entry_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Remove external reference from a time entry"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Projects",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List projects",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/projects"
+          },
+          "docs": "List projects"
+        },
+        {
+          "info": {
+            "name": "Create a project",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.harvestapp.com/v2/projects"
+          },
+          "docs": "Create a project"
+        },
+        {
+          "info": {
+            "name": "Retrieve a project",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/projects/:project_id",
+            "params": [
+              {
+                "name": "project_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a project"
+        },
+        {
+          "info": {
+            "name": "Update a project",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/projects/:project_id",
+            "params": [
+              {
+                "name": "project_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update a project"
+        },
+        {
+          "info": {
+            "name": "Delete a project",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.harvestapp.com/v2/projects/:project_id",
+            "params": [
+              {
+                "name": "project_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a project"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Clients",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List clients",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/clients"
+          },
+          "docs": "List clients"
+        },
+        {
+          "info": {
+            "name": "Create a client",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.harvestapp.com/v2/clients"
+          },
+          "docs": "Create a client"
+        },
+        {
+          "info": {
+            "name": "Retrieve a client",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/clients/:client_id",
+            "params": [
+              {
+                "name": "client_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a client"
+        },
+        {
+          "info": {
+            "name": "Update a client",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/clients/:client_id",
+            "params": [
+              {
+                "name": "client_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update a client"
+        },
+        {
+          "info": {
+            "name": "Delete a client",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.harvestapp.com/v2/clients/:client_id",
+            "params": [
+              {
+                "name": "client_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a client"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Users",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List users",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/users"
+          },
+          "docs": "List users"
+        },
+        {
+          "info": {
+            "name": "Create a user",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.harvestapp.com/v2/users"
+          },
+          "docs": "Create a user"
+        },
+        {
+          "info": {
+            "name": "Retrieve the currently authenticated user",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/users/me"
+          },
+          "docs": "Retrieve the currently authenticated user"
+        },
+        {
+          "info": {
+            "name": "Retrieve a user",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/users/:user_id",
+            "params": [
+              {
+                "name": "user_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a user"
+        },
+        {
+          "info": {
+            "name": "Update a user",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/users/:user_id",
+            "params": [
+              {
+                "name": "user_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update a user"
+        },
+        {
+          "info": {
+            "name": "Delete a user",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.harvestapp.com/v2/users/:user_id",
+            "params": [
+              {
+                "name": "user_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a user"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Invoices",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List invoices",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/invoices"
+          },
+          "docs": "List invoices"
+        },
+        {
+          "info": {
+            "name": "Create an invoice",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.harvestapp.com/v2/invoices"
+          },
+          "docs": "Create an invoice"
+        },
+        {
+          "info": {
+            "name": "Retrieve an invoice",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/invoices/:invoice_id",
+            "params": [
+              {
+                "name": "invoice_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve an invoice"
+        },
+        {
+          "info": {
+            "name": "Update an invoice",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/invoices/:invoice_id",
+            "params": [
+              {
+                "name": "invoice_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update an invoice"
+        },
+        {
+          "info": {
+            "name": "Delete an invoice",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.harvestapp.com/v2/invoices/:invoice_id",
+            "params": [
+              {
+                "name": "invoice_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete an invoice"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Expenses",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List expenses",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/expenses"
+          },
+          "docs": "List expenses"
+        },
+        {
+          "info": {
+            "name": "Create an expense",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.harvestapp.com/v2/expenses"
+          },
+          "docs": "Create an expense"
+        },
+        {
+          "info": {
+            "name": "Retrieve an expense",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/expenses/:expense_id",
+            "params": [
+              {
+                "name": "expense_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve an expense"
+        },
+        {
+          "info": {
+            "name": "Update an expense",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/expenses/:expense_id",
+            "params": [
+              {
+                "name": "expense_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update an expense"
+        },
+        {
+          "info": {
+            "name": "Delete an expense",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.harvestapp.com/v2/expenses/:expense_id",
+            "params": [
+              {
+                "name": "expense_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete an expense"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Estimates",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List estimates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/estimates"
+          },
+          "docs": "List estimates"
+        },
+        {
+          "info": {
+            "name": "Create an estimate",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.harvestapp.com/v2/estimates"
+          },
+          "docs": "Create an estimate"
+        },
+        {
+          "info": {
+            "name": "Retrieve an estimate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/estimates/:estimate_id",
+            "params": [
+              {
+                "name": "estimate_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve an estimate"
+        },
+        {
+          "info": {
+            "name": "Update an estimate",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/estimates/:estimate_id",
+            "params": [
+              {
+                "name": "estimate_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update an estimate"
+        },
+        {
+          "info": {
+            "name": "Delete an estimate",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.harvestapp.com/v2/estimates/:estimate_id",
+            "params": [
+              {
+                "name": "estimate_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete an estimate"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Tasks",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List tasks",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/tasks"
+          },
+          "docs": "List tasks"
+        },
+        {
+          "info": {
+            "name": "Create a task",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.harvestapp.com/v2/tasks"
+          },
+          "docs": "Create a task"
+        },
+        {
+          "info": {
+            "name": "Retrieve a task",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/tasks/:task_id",
+            "params": [
+              {
+                "name": "task_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a task"
+        },
+        {
+          "info": {
+            "name": "Update a task",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/tasks/:task_id",
+            "params": [
+              {
+                "name": "task_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update a task"
+        },
+        {
+          "info": {
+            "name": "Delete a task",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.harvestapp.com/v2/tasks/:task_id",
+            "params": [
+              {
+                "name": "task_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a task"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Roles",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List roles",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/roles"
+          },
+          "docs": "List roles"
+        },
+        {
+          "info": {
+            "name": "Create a role",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.harvestapp.com/v2/roles"
+          },
+          "docs": "Create a role"
+        },
+        {
+          "info": {
+            "name": "Retrieve a role",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/roles/:role_id",
+            "params": [
+              {
+                "name": "role_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a role"
+        },
+        {
+          "info": {
+            "name": "Update a role",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/roles/:role_id",
+            "params": [
+              {
+                "name": "role_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update a role"
+        },
+        {
+          "info": {
+            "name": "Delete a role",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.harvestapp.com/v2/roles/:role_id",
+            "params": [
+              {
+                "name": "role_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a role"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Company",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve company settings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/company"
+          },
+          "docs": "Retrieve company settings"
+        },
+        {
+          "info": {
+            "name": "Update company settings",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/company"
+          },
+          "docs": "Update company settings"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Reports",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Clients time report",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/reports/time/clients",
+            "params": [
+              {
+                "name": "from",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "to",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Clients time report"
+        },
+        {
+          "info": {
+            "name": "Projects time report",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/reports/time/projects",
+            "params": [
+              {
+                "name": "from",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "to",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Projects time report"
+        },
+        {
+          "info": {
+            "name": "Tasks time report",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/reports/time/tasks",
+            "params": [
+              {
+                "name": "from",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "to",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Tasks time report"
+        },
+        {
+          "info": {
+            "name": "Team time report",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/reports/time/team",
+            "params": [
+              {
+                "name": "from",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "to",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Team time report"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
