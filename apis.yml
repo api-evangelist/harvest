@@ -56,7 +56,7 @@ common:
     url: https://help.getharvest.com/api-v2/
   - type: Pricing
     url: https://www.getharvest.com/pricing
-  - type: SignUp
+  - type: Signup
     url: https://id.getharvest.com/signup
   - type: Blog
     url: https://www.getharvest.com/blog
