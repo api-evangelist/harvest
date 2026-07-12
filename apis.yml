@@ -50,6 +50,14 @@ apis:
         url: https://help.getharvest.com/api-v2/introduction/overview/general/
 
 common:
+  - type: TrustCenter
+    url: security/harvest-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/harvest-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/harvest-domain-security.yml
+  - type: Authentication
+    url: authentication/harvest-authentication.yml
   - type: Website
     url: https://www.getharvest.com
   - type: Documentation

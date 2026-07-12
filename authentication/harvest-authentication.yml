@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/harvest-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  description: |-
+    Personal access token or OAuth 2.0 access token passed in the
+    Authorization header. The Harvest-Account-Id header (or account_id
+    query parameter) is also required.
+  sources:
+  - openapi/harvest-openapi.yml
