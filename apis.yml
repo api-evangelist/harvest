@@ -50,6 +50,8 @@ apis:
         url: https://help.getharvest.com/api-v2/introduction/overview/general/
 
 common:
+  - type: AgenticAccess
+    url: agentic-access/harvest-agentic-access.yml
   - type: TrustCenter
     url: security/harvest-trust-center.yml
   - type: VulnerabilityDisclosure
