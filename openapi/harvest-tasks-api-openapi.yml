@@ -1,0 +1,96 @@
+openapi: 3.1.0
+info:
+  title: Harvest API v2 Clients Tasks API
+  version: 2.0.0
+  description: 'REST API for Harvest time tracking, projects, clients, invoices,
+
+    estimates, expenses, tasks, users, roles, company settings, and reports.
+
+    Authentication uses a personal access token or OAuth 2.0 bearer token in
+
+    the Authorization header together with the Harvest-Account-Id header.
+
+    '
+  contact:
+    name: Harvest API Documentation
+    url: https://help.getharvest.com/api-v2/
+servers:
+- url: https://api.harvestapp.com/v2
+  description: Harvest production API
+security:
+- bearerAuth: []
+tags:
+- name: Tasks
+paths:
+  /tasks:
+    get:
+      summary: List tasks
+      operationId: listTasks
+      tags:
+      - Tasks
+      responses:
+        '200':
+          description: List of tasks.
+    post:
+      summary: Create a task
+      operationId: createTask
+      tags:
+      - Tasks
+      responses:
+        '201':
+          description: Task created.
+  /tasks/{task_id}:
+    get:
+      summary: Retrieve a task
+      operationId: getTask
+      tags:
+      - Tasks
+      parameters:
+      - in: path
+        name: task_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Task details.
+    patch:
+      summary: Update a task
+      operationId: updateTask
+      tags:
+      - Tasks
+      parameters:
+      - in: path
+        name: task_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Task updated.
+    delete:
+      summary: Delete a task
+      operationId: deleteTask
+      tags:
+      - Tasks
+      parameters:
+      - in: path
+        name: task_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Task deleted.
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'Personal access token or OAuth 2.0 access token passed in the
+
+        Authorization header. The Harvest-Account-Id header (or account_id
+
+        query parameter) is also required.
+
+        '

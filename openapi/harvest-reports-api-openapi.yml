@@ -1,0 +1,124 @@
+openapi: 3.1.0
+info:
+  title: Harvest API v2 Clients Reports API
+  version: 2.0.0
+  description: 'REST API for Harvest time tracking, projects, clients, invoices,
+
+    estimates, expenses, tasks, users, roles, company settings, and reports.
+
+    Authentication uses a personal access token or OAuth 2.0 bearer token in
+
+    the Authorization header together with the Harvest-Account-Id header.
+
+    '
+  contact:
+    name: Harvest API Documentation
+    url: https://help.getharvest.com/api-v2/
+servers:
+- url: https://api.harvestapp.com/v2
+  description: Harvest production API
+security:
+- bearerAuth: []
+tags:
+- name: Reports
+paths:
+  /reports/time/clients:
+    get:
+      summary: Clients time report
+      operationId: getClientsTimeReport
+      tags:
+      - Reports
+      parameters:
+      - in: query
+        name: from
+        required: true
+        schema:
+          type: string
+          format: date
+      - in: query
+        name: to
+        required: true
+        schema:
+          type: string
+          format: date
+      responses:
+        '200':
+          description: Clients time report.
+  /reports/time/projects:
+    get:
+      summary: Projects time report
+      operationId: getProjectsTimeReport
+      tags:
+      - Reports
+      parameters:
+      - in: query
+        name: from
+        required: true
+        schema:
+          type: string
+          format: date
+      - in: query
+        name: to
+        required: true
+        schema:
+          type: string
+          format: date
+      responses:
+        '200':
+          description: Projects time report.
+  /reports/time/tasks:
+    get:
+      summary: Tasks time report
+      operationId: getTasksTimeReport
+      tags:
+      - Reports
+      parameters:
+      - in: query
+        name: from
+        required: true
+        schema:
+          type: string
+          format: date
+      - in: query
+        name: to
+        required: true
+        schema:
+          type: string
+          format: date
+      responses:
+        '200':
+          description: Tasks time report.
+  /reports/time/team:
+    get:
+      summary: Team time report
+      operationId: getTeamTimeReport
+      tags:
+      - Reports
+      parameters:
+      - in: query
+        name: from
+        required: true
+        schema:
+          type: string
+          format: date
+      - in: query
+        name: to
+        required: true
+        schema:
+          type: string
+          format: date
+      responses:
+        '200':
+          description: Team time report.
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'Personal access token or OAuth 2.0 access token passed in the
+
+        Authorization header. The Harvest-Account-Id header (or account_id
+
+        query parameter) is also required.
+
+        '

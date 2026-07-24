@@ -1,0 +1,141 @@
+openapi: 3.1.0
+info:
+  title: Harvest API v2 Clients TimeEntries API
+  version: 2.0.0
+  description: 'REST API for Harvest time tracking, projects, clients, invoices,
+
+    estimates, expenses, tasks, users, roles, company settings, and reports.
+
+    Authentication uses a personal access token or OAuth 2.0 bearer token in
+
+    the Authorization header together with the Harvest-Account-Id header.
+
+    '
+  contact:
+    name: Harvest API Documentation
+    url: https://help.getharvest.com/api-v2/
+servers:
+- url: https://api.harvestapp.com/v2
+  description: Harvest production API
+security:
+- bearerAuth: []
+tags:
+- name: TimeEntries
+paths:
+  /time_entries:
+    get:
+      summary: List time entries
+      operationId: listTimeEntries
+      tags:
+      - TimeEntries
+      responses:
+        '200':
+          description: List of time entries.
+    post:
+      summary: Create a time entry
+      operationId: createTimeEntry
+      tags:
+      - TimeEntries
+      responses:
+        '201':
+          description: Time entry created.
+  /time_entries/{time_entry_id}:
+    get:
+      summary: Retrieve a time entry
+      operationId: getTimeEntry
+      tags:
+      - TimeEntries
+      parameters:
+      - in: path
+        name: time_entry_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Time entry details.
+    patch:
+      summary: Update a time entry
+      operationId: updateTimeEntry
+      tags:
+      - TimeEntries
+      parameters:
+      - in: path
+        name: time_entry_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Time entry updated.
+    delete:
+      summary: Delete a time entry
+      operationId: deleteTimeEntry
+      tags:
+      - TimeEntries
+      parameters:
+      - in: path
+        name: time_entry_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Time entry deleted.
+  /time_entries/{time_entry_id}/restart:
+    patch:
+      summary: Restart a stopped time entry
+      operationId: restartTimeEntry
+      tags:
+      - TimeEntries
+      parameters:
+      - in: path
+        name: time_entry_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Time entry restarted.
+  /time_entries/{time_entry_id}/stop:
+    patch:
+      summary: Stop a running time entry
+      operationId: stopTimeEntry
+      tags:
+      - TimeEntries
+      parameters:
+      - in: path
+        name: time_entry_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Time entry stopped.
+  /time_entries/{time_entry_id}/external_reference:
+    delete:
+      summary: Remove external reference from a time entry
+      operationId: deleteTimeEntryExternalReference
+      tags:
+      - TimeEntries
+      parameters:
+      - in: path
+        name: time_entry_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: External reference removed.
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'Personal access token or OAuth 2.0 access token passed in the
+
+        Authorization header. The Harvest-Account-Id header (or account_id
+
+        query parameter) is also required.
+
+        '

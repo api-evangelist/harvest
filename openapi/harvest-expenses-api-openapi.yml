@@ -1,0 +1,96 @@
+openapi: 3.1.0
+info:
+  title: Harvest API v2 Clients Expenses API
+  version: 2.0.0
+  description: 'REST API for Harvest time tracking, projects, clients, invoices,
+
+    estimates, expenses, tasks, users, roles, company settings, and reports.
+
+    Authentication uses a personal access token or OAuth 2.0 bearer token in
+
+    the Authorization header together with the Harvest-Account-Id header.
+
+    '
+  contact:
+    name: Harvest API Documentation
+    url: https://help.getharvest.com/api-v2/
+servers:
+- url: https://api.harvestapp.com/v2
+  description: Harvest production API
+security:
+- bearerAuth: []
+tags:
+- name: Expenses
+paths:
+  /expenses:
+    get:
+      summary: List expenses
+      operationId: listExpenses
+      tags:
+      - Expenses
+      responses:
+        '200':
+          description: List of expenses.
+    post:
+      summary: Create an expense
+      operationId: createExpense
+      tags:
+      - Expenses
+      responses:
+        '201':
+          description: Expense created.
+  /expenses/{expense_id}:
+    get:
+      summary: Retrieve an expense
+      operationId: getExpense
+      tags:
+      - Expenses
+      parameters:
+      - in: path
+        name: expense_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Expense details.
+    patch:
+      summary: Update an expense
+      operationId: updateExpense
+      tags:
+      - Expenses
+      parameters:
+      - in: path
+        name: expense_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Expense updated.
+    delete:
+      summary: Delete an expense
+      operationId: deleteExpense
+      tags:
+      - Expenses
+      parameters:
+      - in: path
+        name: expense_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Expense deleted.
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'Personal access token or OAuth 2.0 access token passed in the
+
+        Authorization header. The Harvest-Account-Id header (or account_id
+
+        query parameter) is also required.
+
+        '

@@ -1,0 +1,105 @@
+openapi: 3.1.0
+info:
+  title: Harvest API v2 Clients Users API
+  version: 2.0.0
+  description: 'REST API for Harvest time tracking, projects, clients, invoices,
+
+    estimates, expenses, tasks, users, roles, company settings, and reports.
+
+    Authentication uses a personal access token or OAuth 2.0 bearer token in
+
+    the Authorization header together with the Harvest-Account-Id header.
+
+    '
+  contact:
+    name: Harvest API Documentation
+    url: https://help.getharvest.com/api-v2/
+servers:
+- url: https://api.harvestapp.com/v2
+  description: Harvest production API
+security:
+- bearerAuth: []
+tags:
+- name: Users
+paths:
+  /users:
+    get:
+      summary: List users
+      operationId: listUsers
+      tags:
+      - Users
+      responses:
+        '200':
+          description: List of users.
+    post:
+      summary: Create a user
+      operationId: createUser
+      tags:
+      - Users
+      responses:
+        '201':
+          description: User created.
+  /users/me:
+    get:
+      summary: Retrieve the currently authenticated user
+      operationId: getMe
+      tags:
+      - Users
+      responses:
+        '200':
+          description: Authenticated user details.
+  /users/{user_id}:
+    get:
+      summary: Retrieve a user
+      operationId: getUser
+      tags:
+      - Users
+      parameters:
+      - in: path
+        name: user_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: User details.
+    patch:
+      summary: Update a user
+      operationId: updateUser
+      tags:
+      - Users
+      parameters:
+      - in: path
+        name: user_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: User updated.
+    delete:
+      summary: Delete a user
+      operationId: deleteUser
+      tags:
+      - Users
+      parameters:
+      - in: path
+        name: user_id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: User deleted.
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'Personal access token or OAuth 2.0 access token passed in the
+
+        Authorization header. The Harvest-Account-Id header (or account_id
+
+        query parameter) is also required.
+
+        '

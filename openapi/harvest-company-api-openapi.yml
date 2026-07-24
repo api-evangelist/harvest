@@ -1,0 +1,53 @@
+openapi: 3.1.0
+info:
+  title: Harvest API v2 Clients Company API
+  version: 2.0.0
+  description: 'REST API for Harvest time tracking, projects, clients, invoices,
+
+    estimates, expenses, tasks, users, roles, company settings, and reports.
+
+    Authentication uses a personal access token or OAuth 2.0 bearer token in
+
+    the Authorization header together with the Harvest-Account-Id header.
+
+    '
+  contact:
+    name: Harvest API Documentation
+    url: https://help.getharvest.com/api-v2/
+servers:
+- url: https://api.harvestapp.com/v2
+  description: Harvest production API
+security:
+- bearerAuth: []
+tags:
+- name: Company
+paths:
+  /company:
+    get:
+      summary: Retrieve company settings
+      operationId: getCompany
+      tags:
+      - Company
+      responses:
+        '200':
+          description: Company settings.
+    patch:
+      summary: Update company settings
+      operationId: updateCompany
+      tags:
+      - Company
+      responses:
+        '200':
+          description: Company settings updated.
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'Personal access token or OAuth 2.0 access token passed in the
+
+        Authorization header. The Harvest-Account-Id header (or account_id
+
+        query parameter) is also required.
+
+        '
