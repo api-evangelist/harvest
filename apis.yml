@@ -10,7 +10,19 @@ description: >-
   clients, projects, tasks, time entries, expenses, invoices, estimates,
   and users using OAuth 2.0 or Personal Access Token authentication.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/harvest.png
 tags:
   - Time Tracking
   - Project Management
@@ -24,31 +36,139 @@ created: '2026-05-11'
 modified: '2026-05-11'
 specificationVersion: '0.19'
 apis:
-  - aid: harvest:api-v2
-    name: Harvest API v2
-    description: >-
-      REST API for managing clients, projects, tasks, time entries, expenses,
-      invoices, estimates, and users in Harvest. Supports OAuth 2.0 and
-      Personal Access Token authentication, requires a Harvest-Account-Id
-      header, and uses standard JSON request/response over HTTPS.
-    humanURL: https://help.getharvest.com/api-v2/
-    baseURL: https://api.harvestapp.com/v2
-    tags:
-      - Time Tracking
-      - Project Management
-      - Invoicing
-      - Expense Tracking
-      - Timesheets
-      - OAuth 2.0
-      - Personal Access Token
-    properties:
-      - type: Documentation
-        url: https://help.getharvest.com/api-v2/
-      - type: Authentication
-        url: https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/
-      - type: Overview
-        url: https://help.getharvest.com/api-v2/introduction/overview/general/
-
+- aid: harvest:api-v2
+  name: Harvest API v2
+  description: >-
+    REST API for managing clients, projects, tasks, time entries, expenses, invoices, estimates, and users
+    in Harvest. Supports OAuth 2.0 and Personal Access Token authentication, requires a Harvest-Account-Id
+    header, and uses standard JSON request/response over HTTPS.
+  humanURL: https://help.getharvest.com/api-v2/
+  baseURL: https://api.harvestapp.com/v2
+  tags:
+  - Time Tracking
+  - Project Management
+  - Invoicing
+  - Expense Tracking
+  - Timesheets
+  - OAuth 2.0
+  - Personal Access Token
+  properties:
+  - type: Documentation
+    url: https://help.getharvest.com/api-v2/
+  - type: Authentication
+    url: https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/
+  - type: Overview
+    url: https://help.getharvest.com/api-v2/introduction/overview/general/
+- aid: harvest:harvest-clients-api
+  name: Harvest Clients API
+  description: The Clients API from Harvest — 2 operation(s) for clients.
+  humanURL: https://help.getharvest.com/api-v2/
+  baseURL: https://api.harvestapp.com/v2
+  tags:
+  - Clients
+  properties:
+  - type: OpenAPI
+    url: openapi/harvest-clients-api-openapi.yml
+- aid: harvest:harvest-company-api
+  name: Harvest Company API
+  description: The Company API from Harvest — 1 operation(s) for company.
+  humanURL: https://help.getharvest.com/api-v2/
+  baseURL: https://api.harvestapp.com/v2
+  tags:
+  - Company
+  properties:
+  - type: OpenAPI
+    url: openapi/harvest-company-api-openapi.yml
+- aid: harvest:harvest-estimates-api
+  name: Harvest Estimates API
+  description: The Estimates API from Harvest — 2 operation(s) for estimates.
+  humanURL: https://help.getharvest.com/api-v2/
+  baseURL: https://api.harvestapp.com/v2
+  tags:
+  - Estimates
+  properties:
+  - type: OpenAPI
+    url: openapi/harvest-estimates-api-openapi.yml
+- aid: harvest:harvest-expenses-api
+  name: Harvest Expenses API
+  description: The Expenses API from Harvest — 2 operation(s) for expenses.
+  humanURL: https://help.getharvest.com/api-v2/
+  baseURL: https://api.harvestapp.com/v2
+  tags:
+  - Expenses
+  properties:
+  - type: OpenAPI
+    url: openapi/harvest-expenses-api-openapi.yml
+- aid: harvest:harvest-invoices-api
+  name: Harvest Invoices API
+  description: The Invoices API from Harvest — 2 operation(s) for invoices.
+  humanURL: https://help.getharvest.com/api-v2/
+  baseURL: https://api.harvestapp.com/v2
+  tags:
+  - Invoices
+  properties:
+  - type: OpenAPI
+    url: openapi/harvest-invoices-api-openapi.yml
+- aid: harvest:harvest-projects-api
+  name: Harvest Projects API
+  description: The Projects API from Harvest — 2 operation(s) for projects.
+  humanURL: https://help.getharvest.com/api-v2/
+  baseURL: https://api.harvestapp.com/v2
+  tags:
+  - Projects
+  properties:
+  - type: OpenAPI
+    url: openapi/harvest-projects-api-openapi.yml
+- aid: harvest:harvest-reports-api
+  name: Harvest Reports API
+  description: The Reports API from Harvest — 4 operation(s) for reports.
+  humanURL: https://help.getharvest.com/api-v2/
+  baseURL: https://api.harvestapp.com/v2
+  tags:
+  - Reports
+  properties:
+  - type: OpenAPI
+    url: openapi/harvest-reports-api-openapi.yml
+- aid: harvest:harvest-roles-api
+  name: Harvest Roles API
+  description: The Roles API from Harvest — 2 operation(s) for roles.
+  humanURL: https://help.getharvest.com/api-v2/
+  baseURL: https://api.harvestapp.com/v2
+  tags:
+  - Roles
+  properties:
+  - type: OpenAPI
+    url: openapi/harvest-roles-api-openapi.yml
+- aid: harvest:harvest-tasks-api
+  name: Harvest Tasks API
+  description: The Tasks API from Harvest — 2 operation(s) for tasks.
+  humanURL: https://help.getharvest.com/api-v2/
+  baseURL: https://api.harvestapp.com/v2
+  tags:
+  - Tasks
+  properties:
+  - type: OpenAPI
+    url: openapi/harvest-tasks-api-openapi.yml
+- aid: harvest:harvest-timeentries-api
+  name: Harvest TimeEntries API
+  description: The TimeEntries API from Harvest — 5 operation(s) for timeentries.
+  humanURL: https://help.getharvest.com/api-v2/
+  baseURL: https://api.harvestapp.com/v2
+  tags:
+  - TimeEntries
+  properties:
+  - type: OpenAPI
+    url: openapi/harvest-timeentries-api-openapi.yml
+- aid: harvest:harvest-users-api
+  name: Harvest Users API
+  description: The Users API from Harvest — 3 operation(s) for users.
+  humanURL: https://help.getharvest.com/api-v2/
+  baseURL: https://api.harvestapp.com/v2
+  tags:
+  - Users
+  properties:
+  - type: OpenAPI
+    url: openapi/harvest-users-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/harvest-agentic-access.yml
