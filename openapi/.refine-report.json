@@ -1,0 +1,34 @@
+{
+  "provider": "harvest",
+  "sources": [
+    "harvest-clients-api-openapi.yml",
+    "harvest-company-api-openapi.yml",
+    "harvest-estimates-api-openapi.yml",
+    "harvest-expenses-api-openapi.yml",
+    "harvest-invoices-api-openapi.yml",
+    "harvest-projects-api-openapi.yml",
+    "harvest-reports-api-openapi.yml",
+    "harvest-roles-api-openapi.yml",
+    "harvest-tasks-api-openapi.yml",
+    "harvest-timeentries-api-openapi.yml",
+    "harvest-users-api-openapi.yml"
+  ],
+  "outputs": [
+    "harvest-clients-api-openapi.yml",
+    "harvest-company-api-openapi.yml",
+    "harvest-estimates-api-openapi.yml",
+    "harvest-expenses-api-openapi.yml",
+    "harvest-invoices-api-openapi.yml",
+    "harvest-projects-api-openapi.yml",
+    "harvest-reports-api-openapi.yml",
+    "harvest-roles-api-openapi.yml",
+    "harvest-tasks-api-openapi.yml",
+    "harvest-timeentries-api-openapi.yml",
+    "harvest-users-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
