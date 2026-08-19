@@ -1,0 +1,116 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Harvest API v2 Clients Reports API",
+    "version": "2.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Reports",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Clients time report",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/reports/time/clients",
+            "params": [
+              {
+                "name": "from",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "to",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Clients time report"
+        },
+        {
+          "info": {
+            "name": "Projects time report",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/reports/time/projects",
+            "params": [
+              {
+                "name": "from",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "to",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Projects time report"
+        },
+        {
+          "info": {
+            "name": "Tasks time report",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/reports/time/tasks",
+            "params": [
+              {
+                "name": "from",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "to",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Tasks time report"
+        },
+        {
+          "info": {
+            "name": "Team time report",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/reports/time/team",
+            "params": [
+              {
+                "name": "from",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "to",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Team time report"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

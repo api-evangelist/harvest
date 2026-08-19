@@ -1,0 +1,154 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Harvest API v2 Clients TimeEntries API",
+    "version": "2.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "TimeEntries",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List time entries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/time_entries"
+          },
+          "docs": "List time entries"
+        },
+        {
+          "info": {
+            "name": "Create a time entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.harvestapp.com/v2/time_entries"
+          },
+          "docs": "Create a time entry"
+        },
+        {
+          "info": {
+            "name": "Retrieve a time entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.harvestapp.com/v2/time_entries/:time_entry_id",
+            "params": [
+              {
+                "name": "time_entry_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a time entry"
+        },
+        {
+          "info": {
+            "name": "Update a time entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/time_entries/:time_entry_id",
+            "params": [
+              {
+                "name": "time_entry_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update a time entry"
+        },
+        {
+          "info": {
+            "name": "Delete a time entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.harvestapp.com/v2/time_entries/:time_entry_id",
+            "params": [
+              {
+                "name": "time_entry_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a time entry"
+        },
+        {
+          "info": {
+            "name": "Restart a stopped time entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/time_entries/:time_entry_id/restart",
+            "params": [
+              {
+                "name": "time_entry_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Restart a stopped time entry"
+        },
+        {
+          "info": {
+            "name": "Stop a running time entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.harvestapp.com/v2/time_entries/:time_entry_id/stop",
+            "params": [
+              {
+                "name": "time_entry_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Stop a running time entry"
+        },
+        {
+          "info": {
+            "name": "Remove external reference from a time entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.harvestapp.com/v2/time_entries/:time_entry_id/external_reference",
+            "params": [
+              {
+                "name": "time_entry_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Remove external reference from a time entry"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
