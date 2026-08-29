@@ -198,6 +198,9 @@ apis:
   - type: OpenAPI
     url: openapi/harvest-users-api-openapi.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/harvest-capability-edges.yml
+    name: Harvest Business Capability Map
   - type: AgenticAccess
     url: agentic-access/harvest-agentic-access.yml
   - type: TrustCenter

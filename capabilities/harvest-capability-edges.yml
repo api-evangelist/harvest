@@ -1,0 +1,48 @@
+slug: harvest
+provider: Harvest
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Professional Services
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 3
+edges:
+- tag: TimeEntries
+  spec_file: harvest-timeentries-api-openapi.yml
+  capability_id: BC-4330.10
+  capability_id_l1: BC-4330
+  capability_name: Timekeeping Management
+  confidence: 0.9
+  evidence: POST /time_entries createTimeEntry Create a time entry; PATCH /time_entries/{time_entry_id}/stop
+    Stop a running time entry — vendor 'used by agencies, consultancies, and professional services teams
+    to track billable hours'
+  reason: Operations capture, edit and stop professional time entries against projects/tasks — Timekeeping
+    Management within Time and Engagement Billing.
+- tag: Clients
+  spec_file: harvest-clients-api-openapi.yml
+  capability_id: BC-420.10
+  capability_id_l1: BC-420
+  capability_name: Customer Data Management
+  confidence: 0.7
+  evidence: GET /clients listClients List clients; POST /clients createClient Create a client; PATCH /clients/{client_id}
+    updateClient
+  reason: Plain CRUD over the client master record in a professional-services platform — creating, retrieving,
+    updating and deleting client entities that projects and invoices hang off. That is customer master
+    data maintenance, not relationship stewardship or engagement intake.
+- tag: Invoices
+  spec_file: harvest-invoices-api-openapi.yml
+  capability_id: BC-4330.50
+  capability_id_l1: BC-4330
+  capability_name: Invoice Generation Management
+  confidence: 0.7
+  evidence: 'POST /invoices createInvoice Create an invoice; vendor description: "track billable hours,
+    manage budgets, and bill clients"'
+  reason: Invoice creation and maintenance in a platform whose invoices are generated from billable time
+    and project expenses — engagement invoice generation. Some residual ambiguity with generic accounts
+    receivable invoicing keeps this below 0.8.
