@@ -174,18 +174,6 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/harvest-tasks-api-openapi.yml
-- aid: harvest:harvest-timeentries-api
-  name: Harvest TimeEntries API
-  description: The TimeEntries API from Harvest — 5 operation(s) for timeentries.
-  humanURL: https://help.getharvest.com/api-v2/
-  baseURL: https://api.harvestapp.com/v2
-  tags:
-  - Time Entries
-  tags_raw:
-  - TimeEntries
-  properties:
-  - type: OpenAPI
-    url: openapi/harvest-timeentries-api-openapi.yml
 - aid: harvest:harvest-users-api
   name: Harvest Users API
   description: The Users API from Harvest — 3 operation(s) for users.
@@ -198,6 +186,16 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/harvest-users-api-openapi.yml
+- aid: harvest:harvest-time-entries-api
+  name: Harvest Time Entries API
+  description: The Time Entries API from Harvest — 5 operation(s) for time entries.
+  humanURL: https://help.getharvest.com/api-v2/
+  baseURL: https://api.harvestapp.com/v2
+  tags:
+  - Time Entries
+  properties:
+  - type: OpenAPI
+    url: openapi/harvest-time-entries-api-openapi.yml
 common:
   - type: CapabilityMap
     url: capabilities/harvest-capability-edges.yml
