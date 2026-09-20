@@ -1,0 +1,64 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-09-20'
+method: searched
+source: https://www.getharvest.com/pricing
+sources:
+- https://www.getharvest.com/pricing
+provenance:
+  tool: planning/api-economics/harvest_pricing.py
+  run: 20260920T120546
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: per-seat
+published: true
+note: Annual billing gives 20% discount; monthly and annual per-seat prices both shown. All prices in
+  USD.
+plan_count: 6
+currency: USD
+plans:
+- name: Free
+  price_text: $0 forever
+  price: 0
+  currency: USD
+  period: month
+  unit: account
+  included_quota: 1 seat, 2 projects, Time tracking, Invoicing, Expense tracking, Mac & iOS apps
+  overage: The usage of some features may require the payment of fees.
+- name: Teams
+  price_text: $9 seat/month
+  price: 9
+  currency: USD
+  period: month
+  unit: seat
+  included_quota: Unlimited seats, time tracking, team reporting, invoicing, accounting and payment integrations;
+    $108 per seat, billed annually
+  overage: As your team grows, additional invoices, projects, clients, and tasks are billed based on what
+    you use
+- name: Teams (monthly)
+  price_text: $11 seat/month
+  price: 11
+  currency: USD
+  period: month
+  unit: seat
+  included_quota: All Free features, and Teams features; 30-day free trial
+- name: Enterprise
+  price_text: $14 seat/month
+  price: 14
+  currency: USD
+  period: month
+  unit: seat
+  included_quota: All Teams features plus unlimited custom reports, profitability reporting, timesheet
+    approvals, activity log, SAML-based SSO, require notes; $168 per seat, billed annually
+  overage: additional invoices, projects, clients, and tasks are billed based on what you use
+- name: Enterprise (monthly)
+  price_text: $17. 50 seat/month
+  price: 17.5
+  currency: USD
+  period: month
+  unit: seat
+  included_quota: 30-day free trial
+- name: Enterprise Plus
+  price_text: Custom pricing
+  period: none
+  unit: seat
+  included_quota: All Enterprise features, custom integrations, dedicated CSM, white labelling

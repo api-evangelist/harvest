@@ -198,6 +198,8 @@ apis:
   - type: OpenAPI
     url: openapi/harvest-time-entries-api-openapi.yml
 common:
+  - type: Plans
+    url: plans/harvest-plans-pricing.yml
   - type: CapabilityMap
     url: capabilities/harvest-capability-edges.yml
     name: Harvest Business Capability Map
