@@ -14,7 +14,8 @@ capability_model:
 edge_count: 3
 edges:
 - tag: TimeEntries
-  spec_file: harvest-timeentries-api-openapi.yml
+  spec_file: harvest-time-entries-api-openapi.yml
+  reanchored_from: harvest-timeentries-api-openapi.yml
   capability_id: BC-4330.10
   capability_id_l1: BC-4330
   capability_name: Timekeeping Management
