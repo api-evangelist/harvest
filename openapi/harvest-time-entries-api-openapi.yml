@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Harvest API v2 Clients TimeEntries API
+  title: Harvest API v2 Time Entries API
   version: 2.0.0
   description: 'REST API for Harvest time tracking, projects, clients, invoices,
 
@@ -8,9 +8,7 @@ info:
 
     Authentication uses a personal access token or OAuth 2.0 bearer token in
 
-    the Authorization header together with the Harvest-Account-Id header.
-
-    '
+    the Authorization header together with the Harvest-Account-Id header.'
   contact:
     name: Harvest API Documentation
     url: https://help.getharvest.com/api-v2/
@@ -20,14 +18,14 @@ servers:
 security:
 - bearerAuth: []
 tags:
-- name: TimeEntries
+- name: Time Entries
 paths:
   /time_entries:
     get:
       summary: List time entries
       operationId: listTimeEntries
       tags:
-      - TimeEntries
+      - Time Entries
       responses:
         '200':
           description: List of time entries.
@@ -35,7 +33,7 @@ paths:
       summary: Create a time entry
       operationId: createTimeEntry
       tags:
-      - TimeEntries
+      - Time Entries
       responses:
         '201':
           description: Time entry created.
@@ -44,7 +42,7 @@ paths:
       summary: Retrieve a time entry
       operationId: getTimeEntry
       tags:
-      - TimeEntries
+      - Time Entries
       parameters:
       - in: path
         name: time_entry_id
@@ -58,7 +56,7 @@ paths:
       summary: Update a time entry
       operationId: updateTimeEntry
       tags:
-      - TimeEntries
+      - Time Entries
       parameters:
       - in: path
         name: time_entry_id
@@ -72,7 +70,7 @@ paths:
       summary: Delete a time entry
       operationId: deleteTimeEntry
       tags:
-      - TimeEntries
+      - Time Entries
       parameters:
       - in: path
         name: time_entry_id
@@ -87,7 +85,7 @@ paths:
       summary: Restart a stopped time entry
       operationId: restartTimeEntry
       tags:
-      - TimeEntries
+      - Time Entries
       parameters:
       - in: path
         name: time_entry_id
@@ -102,7 +100,7 @@ paths:
       summary: Stop a running time entry
       operationId: stopTimeEntry
       tags:
-      - TimeEntries
+      - Time Entries
       parameters:
       - in: path
         name: time_entry_id
@@ -117,7 +115,7 @@ paths:
       summary: Remove external reference from a time entry
       operationId: deleteTimeEntryExternalReference
       tags:
-      - TimeEntries
+      - Time Entries
       parameters:
       - in: path
         name: time_entry_id

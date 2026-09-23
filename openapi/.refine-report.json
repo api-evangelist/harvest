@@ -1,17 +1,7 @@
 {
   "provider": "harvest",
   "sources": [
-    "harvest-clients-api-openapi.yml",
-    "harvest-company-api-openapi.yml",
-    "harvest-estimates-api-openapi.yml",
-    "harvest-expenses-api-openapi.yml",
-    "harvest-invoices-api-openapi.yml",
-    "harvest-projects-api-openapi.yml",
-    "harvest-reports-api-openapi.yml",
-    "harvest-roles-api-openapi.yml",
-    "harvest-tasks-api-openapi.yml",
-    "harvest-timeentries-api-openapi.yml",
-    "harvest-users-api-openapi.yml"
+    "_original/harvest-openapi.yml"
   ],
   "outputs": [
     "harvest-clients-api-openapi.yml",
@@ -26,9 +16,28 @@
     "harvest-timeentries-api-openapi.yml",
     "harvest-users-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "harvest-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "superseded outputs removed: harvest-time-entries-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 12 total)"
+  ],
+  "skipped": [
+    "harvest-clients-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "harvest-company-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "harvest-estimates-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "harvest-expenses-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "harvest-invoices-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "harvest-projects-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "harvest-reports-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "harvest-roles-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "harvest-tasks-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "harvest-time-entries-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "harvest-users-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
