@@ -1,0 +1,1000 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/harvest/integrations
+- https://n8n.io/integrations/harvest/
+- https://composio.dev/toolkits/harvest
+checked:
+- https://composio.dev/toolkits/harvest
+- https://monid.ai/tools/harvest
+- https://n8n.io/integrations/harvest/
+- https://zapier.com/apps/harvest/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: harvest
+  url: https://zapier.com/apps/harvest/integrations
+  external_url: https://getharvest.com/
+  partner_tier: GOLD
+  triggers:
+  - key: invoice_paid
+    label: Invoice Paid
+  - key: invoice_sent
+    label: Invoice Sent
+  - key: new_client
+    label: New Client
+  - key: new_contact
+    label: New Contact
+  - key: new_expense
+    label: New Expense
+  - key: new_invoice
+    label: New Invoice
+  - key: new_project
+    label: New Project
+  - key: new_task
+    label: New Task
+  - key: new_time_entry
+    label: New Time Entry
+  - key: new_user
+    label: New User
+  - key: new_user_assignment
+    label: New User Assignment
+  - key: timer_started
+    label: Timer Started
+  - key: timer_stopped
+    label: Timer Stopped
+  - key: updated_client
+    label: Updated Client
+  - key: updated_invoice
+    label: Updated Invoice
+  - key: updated_time_entry
+    label: Updated Time Entry
+  actions:
+  - key: create_client
+    label: Create Client
+  - key: create_contact
+    label: Create Contact
+  - key: create_project
+    label: Create Project
+  - key: create_task
+    label: Create Task
+  - key: create_time_entry
+    label: Create Time Entry
+  - key: create_time_entry_timestamps
+    label: Create Time Entry (Start & End Times)
+  - key: start_timer
+    label: Start Timer
+  - key: stop_timer
+    label: Stop Timer
+  - key: _zap_raw_request
+    label: API Request (Beta)
+  searches:
+  - key: client
+    label: Find Client
+  - key: invoice
+    label: Find Invoice
+  - key: project
+    label: Find Project
+  - key: task
+    label: Find Task
+- marketplace: n8n
+  channel: open-source-node
+  app: harvest
+  url: https://n8n.io/integrations/harvest/
+  identity: title
+  pair_pages: 458
+  pairs:
+  - headless-testing
+  - helcim
+  - helpscout
+  - heysummit
+  - highlevel
+  - home-assistant
+  - http-request
+  - hub-planner
+  - hubspot
+  - hugging-face
+  - humantic-ai
+  - hunter
+  - hybrid-analysis
+  - iauditor-by-safetyculture
+  - idealpostcodes
+  - idealspot
+  - ideta
+  - imgbb
+  - imgur
+  - imperva-waf
+  - impira
+  - industryselect
+  - influxdb-cloud
+  - infolobby
+  - instabot
+  - instabug
+  - intakeq
+  - intercom
+  - invoice-ninja
+  - invoiced
+  - ip2location
+  - ipinfo
+  - ipregistry
+  - iris-dfir
+  - isn
+  - iterable
+  - jama
+  - jasper
+  - jenkins
+  - jina-ai
+  - jira-software
+  - jwt
+  - kadoa
+  - kafka
+  - kaggle
+  - kanban-tool
+  - karbon
+  - keap
+  - keygen
+  - keyzy
+  - kibana
+  - kitemaker
+  - klaviyo
+  - klazify
+  - knack
+  - knowbe4
+  - kobotoolbox
+  - kraftful
+  - lagrowthmachine
+  - lambdatest
+  - landbot
+  - laposta
+  - launch27
+  - launchdarkly
+  - ldap
+  - leadboxer
+  - leadpops
+  - lemlist
+  - lets-enhance
+  - libraria
+  - lighthouse
+  - lime-go
+  - line
+  - linear
+  - lingvanex
+  - linkedin
+  - linkish
+  - linode
+  - liveagent
+  - localazy
+  - loginradius
+  - lokalise
+  - lonescale
+  - lucidchart
+  - magento-2
+  - mailcheck
+  - mailchimp
+  - mailerlite
+  - mailersend
+  - mailgun
+  - mailify
+  - mailjet
+  - mailmodo
+  - malcore
+  - mandrill
+  - marcom-robot
+  - marketing-master-io
+  - marketplacer
+  - marketstack
+  - mastodon
+  - matrix
+  - mattermost
+  - mautic
+  - mav
+  - maverick
+  - medium
+  - mem
+  - messagebird
+  - metabase
+  - metatextai-inference-api
+  - mews
+  - microsoft-azure-monitor
+  - microsoft-dynamics-365-business-central-api
+  - microsoft-dynamics-crm
+  - microsoft-entra-id
+  - microsoft-entra-id-azure-active-directory
+  - microsoft-excel
+  - microsoft-graph-security
+  - microsoft-onedrive
+  - microsoft-outlook
+  - microsoft-sharepoint
+  - microsoft-sql
+  - microsoft-teams
+  - microsoft-teams-admin
+  - microsoft-to-do
+  - miestro
+  - mindee
+  - miro
+  - misp
+  - missive
+  - mist
+  - mistral-ai
+  - mixpanel
+  - mocean
+  - mondaycom
+  - mongodb
+  - monica-crm
+  - moonclerk
+  - moonmail
+  - morph
+  - mqtt
+  - msg91
+  - mux
+  - mx-toolbox
+  - my-askai
+  - myphoner
+  - mysql
+  - nanonets-ocr
+  - nasa
+  - ncscale
+  - netlify
+  - nextcloud
+  - nightfallai
+  - ninox
+  - nmkr
+  - nocodb
+  - notion
+  - nozbe-teams
+  - npm
+  - nuclia
+  - nusii-proposals
+  - nyckel
+  - nyota
+  - occasion
+  - ocrspace
+  - odoo
+  - offalerts
+  - okta
+  - omeda
+  - omniconvert
+  - omnimind
+  - on2air
+  - one-ai
+  - one-simple-api
+  - onfleet
+  - openai
+  - opencti
+  - openthesaurus
+  - openweathermap
+  - opn-formerly-omise
+  - oracle-database
+  - orbit
+  - order-desk
+  - ortto
+  - oura
+  - paddle
+  - pagerduty
+  - paperform
+  - papyrs
+  - parsehub
+  - parseprompt
+  - passcreator
+  - passslot
+  - patreon
+  - paymo
+  - paypal
+  - peekalink
+  - perplexity
+  - persio
+  - personal-ai
+  - phantombuster
+  - philips-hue
+  - phrase
+  - pinata
+  - pinboard
+  - pinterest
+  - pipedrive
+  - pipefy
+  - pirate-weather
+  - pitchly
+  - pivotal-tracker
+  - planview-leankit
+  - planyo-online-booking
+  - platformly
+  - plecto
+  - plivo
+  - postbin
+  - postgres
+  - posthog
+  - practitest
+  - predisai
+  - prodia
+  - product-hunt
+  - profitwell
+  - project-bubble-proprofs-project
+  - prompthub
+  - prospe-ai
+  - pushbullet
+  - pushcut
+  - pusher
+  - pushover
+  - qradar
+  - qualaroo
+  - qualys
+  - quentn
+  - questdb
+  - quick-base
+  - quickbooks-online
+  - quickchart
+  - quintadb
+  - rabbitmq
+  - radar
+  - raindrop
+  - rapid7-insightvm
+  - raven-tools
+  - rawg-video-games-database
+  - read-ai
+  - realphonevalidation
+  - recharge
+  - recorded-future
+  - redash
+  - reddit
+  - redis
+  - relevance-ai
+  - relink-url-shortener
+  - relysia
+  - replyio
+  - retable
+  - reverse-contact
+  - rewardful
+  - ritekit
+  - roboflow
+  - robolytix
+  - roboresponseai
+  - rocketchat
+  - rollbar
+  - rootly
+  - route4me
+  - rundeck
+  - s3
+  - sales-simplify
+  - salesforce
+  - salesmaa
+  - salesmate
+  - salesmsg
+  - salesrocks
+  - samsung-smartthings
+  - scrape-itcloud
+  - scrapeninja
+  - seamless-ai
+  - search-and-save
+  - seatable
+  - securityscorecard
+  - segment
+  - sekoia
+  - sellix
+  - sembly-ai
+  - sendgrid
+  - sendy
+  - sentryio
+  - servicenow
+  - sharly-ai
+  - shiphero
+  - shipstation
+  - shopify
+  - shortio
+  - shuffler
+  - sierra-interactive
+  - sifter
+  - signaturit
+  - signl4
+  - signrequest
+  - simpleem
+  - simplehash
+  - simplekpi
+  - simplelocalize
+  - simplero
+  - simpletexting
+  - sitecreatorio
+  - sitespeakai
+  - slack
+  - smaily
+  - smartreach
+  - smartsuite
+  - sms-it
+  - sms-magic
+  - sms77
+  - snapdocs
+  - snatchbot
+  - snipcart
+  - snowflake
+  - solve-data
+  - specter
+  - splunk
+  - spondyr
+  - spontit
+  - sportsdata
+  - spotify
+  - spydra
+  - sslmate-cert-spotter-api
+  - stackby
+  - stammerai
+  - starton
+  - statuscake
+  - storyblok
+  - strapi
+  - strava
+  - stripe
+  - studio-by-ai21-labs
+  - suitedash
+  - supabase
+  - supernormal
+  - superpowered
+  - supportivekoala
+  - survicate
+  - swagup
+  - switchboard
+  - syncly
+  - syncromsp
+  - synthesia
+  - taiga
+  - talentlms
+  - talknotes
+  - tapfiliate
+  - td-ameritrade
+  - teachable
+  - team-up
+  - teamdeck
+  - teamgate
+  - teknoir
+  - telegram
+  - testmonitor
+  - textcortex-ai
+  - textgain
+  - textkit
+  - textmagic
+  - thankster
+  - the-customer-factor
+  - the-leap
+  - thehive
+  - thehive-5
+  - thoughtfulgpt
+  - thrivecart
+  - tidb-cloud
+  - tierion
+  - tilda
+  - timescaledb
+  - timetonic
+  - tinyurl
+  - tisane-labs
+  - todoist
+  - token-metrics
+  - toket
+  - totango
+  - trackvia
+  - transifex
+  - travisci
+  - trellix-epo
+  - trello
+  - trengo
+  - trevorio
+  - turbohire
+  - tuskr
+  - tuulio
+  - twake
+  - twilio
+  - twist
+  - twitter
+  - unbounce
+  - unisender
+  - unleashed-software
+  - upkeep
+  - uplead
+  - uproc
+  - uptimerobot
+  - uptimetoolbox
+  - urlscanio
+  - uservoice
+  - venafi-tls-protect-cloud
+  - venafi-tls-protect-datacenter
+  - venly
+  - verifalia
+  - vero
+  - vimeo
+  - virustotal
+  - vivifyscrum
+  - voicit
+  - vonage
+  - vowel
+  - watchsignals
+  - waveline-extract
+  - webex-by-cisco
+  - webflow
+  - webscraperio
+  - wekan
+  - whal3s
+  - whatconverts
+  - whatsapp-business-cloud
+  - wise
+  - wizychat
+  - wonderchat
+  - wondercraft
+  - woocommerce
+  - woodpeckerco
+  - wordpress
+  - workast
+  - workboard
+  - woxo
+  - writesonic
+  - wubook-ratechecker
+  - xero
+  - xtractly
+  - ybug
+  - ycode
+  - yodiz
+  - yourls
+  - youtube
+  - zabbix
+  - zammad
+  - zendesk
+  - zenrows
+  - zoho-books
+  - zoho-crm
+  - zoho-desk
+  - zonka-feedback
+  - zoom
+  - zscaler-zia
+  - zulip
+- marketplace: composio
+  channel: agent-gateway
+  app: harvest
+  url: https://composio.dev/toolkits/harvest
+  identity: action-prefix
+  actions:
+  - key: HARVEST_CREATE_CLIENT
+  - key: HARVEST_CREATE_CLIENT_CONTACT
+  - key: HARVEST_CREATE_ESTIMATE
+  - key: HARVEST_CREATE_ESTIMATE_ITEM_CATEGORY
+  - key: HARVEST_CREATE_ESTIMATE_MESSAGE
+  - key: HARVEST_CREATE_EXPENSE
+  - key: HARVEST_CREATE_INVOICE
+  - key: HARVEST_CREATE_INVOICE_ITEM_CATEGORY
+  - key: HARVEST_CREATE_INVOICE_MESSAGE
+  - key: HARVEST_CREATE_INVOICE_PAYMENT
+  - key: HARVEST_CREATE_PROJECT
+  - key: HARVEST_CREATE_TASK
+  - key: HARVEST_CREATE_TIME_ENTRY
+  - key: HARVEST_CREATE_USER
+  - key: HARVEST_DELETE_CLIENT
+  - key: HARVEST_DELETE_CLIENT_CONTACT
+  - key: HARVEST_DELETE_ESTIMATE
+  - key: HARVEST_DELETE_ESTIMATE_MESSAGE
+  - key: HARVEST_DELETE_INVOICE
+  - key: HARVEST_DELETE_INVOICE_ITEM_CATEGORY
+  - key: HARVEST_DELETE_INVOICE_MESSAGE
+  - key: HARVEST_DELETE_INVOICE_PAYMENT
+  - key: HARVEST_DELETE_PROJECT
+  - key: HARVEST_DELETE_TASK
+  - key: HARVEST_DELETE_TIME_ENTRY
+  - key: HARVEST_DELETE_USER
+  - key: HARVEST_GET_CLIENT
+  - key: HARVEST_GET_COMPANY_INFO
+  - key: HARVEST_GET_ESTIMATE
+  - key: HARVEST_GET_INVOICE
+  - key: HARVEST_GET_PROJECT
+  - key: HARVEST_GET_TASK
+  - key: HARVEST_GET_TIME_ENTRY
+  - key: HARVEST_GET_USER
+  - key: HARVEST_LIST_CLIENTS
+  - key: HARVEST_LIST_CLIENT_CONTACTS
+  - key: HARVEST_LIST_ESTIMATE_MESSAGES
+  - key: HARVEST_LIST_EXPENSE_CATEGORIES
+  - key: HARVEST_LIST_INVOICES
+  - key: HARVEST_LIST_INVOICE_ITEM_CATEGORIES
+  - key: HARVEST_LIST_INVOICE_MESSAGES
+  - key: HARVEST_LIST_INVOICE_PAYMENTS
+  - key: HARVEST_LIST_PROJECTS
+  - key: HARVEST_LIST_TASKS
+  - key: HARVEST_LIST_TIME_ENTRIES
+  - key: HARVEST_LIST_USERS
+  - key: HARVEST_UPDATE_CLIENT
+  - key: HARVEST_UPDATE_CLIENT_CONTACT
+  - key: HARVEST_UPDATE_COMPANY_INFO
+  - key: HARVEST_UPDATE_ESTIMATE
+  - key: HARVEST_UPDATE_ESTIMATE_ITEM_CATEGORY
+  - key: HARVEST_UPDATE_EXPENSE
+  - key: HARVEST_UPDATE_INVOICE
+  - key: HARVEST_UPDATE_PROJECT
+  - key: HARVEST_UPDATE_TASK
+  - key: HARVEST_UPDATE_TIME_ENTRY
+  - key: HARVEST_UPDATE_USER
+edges:
+- partner_name: monday.com
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/monday
+  direction: third-party
+  category: Project Management
+  partner_url: https://monday.com/
+- partner_name: ClickUp
+  partner: clickup
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/clickup
+  direction: third-party
+  category: Project Management
+  partner_url: https://clickup.com/zapier
+- partner_name: HubSpot
+  partner: hubspot
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/hubspot
+  direction: third-party
+  category: Marketing Automation
+  partner_url: http://www.hubspot.com/
+- partner_name: Airtable
+  partner: airtable
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/airtable
+  direction: third-party
+  category: Databases
+  partner_url: https://airtable.com/
+- partner_name: Notion
+  partner: notion
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/notion
+  direction: third-party
+  category: Task Management
+  partner_url: https://www.notion.so/
+- partner_name: Google Calendar
+  partner: google-calendar
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/google-calendar
+  direction: third-party
+  category: Calendar
+  partner_url: https://calendar.google.com/
+- partner_name: QuickBooks Online
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/quickbooks
+  direction: third-party
+  category: Accounting
+  partner_url: http://intuit.com/
+- partner_name: Jira Software Cloud
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/jira-software-cloud
+  direction: third-party
+  category: Project Management
+  partner_url: https://www.atlassian.com/software/jira
+- partner_name: Wave
+  partner: wave-financial
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/wave
+  direction: third-party
+  category: Accounting
+  partner_url: https://www.waveapps.com/
+- partner_name: Basecamp
+  partner: basecamp
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/basecamp
+  direction: third-party
+  category: Project Management
+  partner_url: https://basecamp.com/
+- partner_name: Asana
+  partner: asana
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/asana
+  direction: third-party
+  category: Project Management
+  partner_url: http://asana.com/
+- partner_name: Slack
+  partner: slack
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/slack
+  direction: third-party
+  category: Team Chat
+  partner_url: https://slack.com/
+- partner_name: Gmail
+  partner: gmail
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/gmail
+  direction: third-party
+  category: Email
+  partner_url: https://mail.google.com/
+- partner_name: PandaDoc
+  partner: pandadoc
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/pandadoc
+  direction: third-party
+  category: Documents
+  partner_url: https://www.pandadoc.com/integrations/zapier/?utm_source=zapier-marketplace&utm_medium=partner&utm_campaign=2020-11-inbd-marketplace-websitevisit-pandadoc-zapier-integration
+- partner_name: Xero
+  partner: xero
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/xero
+  direction: third-party
+  category: Accounting
+  partner_url: https://xero5440.partnerlinks.io/uvwuuwrxyoi8
+- partner_name: Microsoft Outlook
+  partner: microsoft-outlook
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/microsoft-outlook
+  direction: third-party
+  category: Calendar
+  partner_url: https://outlook.live.com/
+- partner_name: Smartsheet
+  partner: smartsheet
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/smartsheet
+  direction: third-party
+  category: Spreadsheets
+  partner_url: https://www.smartsheet.com/
+- partner_name: Float
+  partner: float
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/float
+  direction: third-party
+  category: Scheduling & Booking
+  partner_url: https://www.float.com/
+- partner_name: Google Sheets
+  partner: google-sheets
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/google-sheets
+  direction: third-party
+  category: Google
+  partner_url: http://sheets.google.com/
+- partner_name: Clockify
+  partner: clockify
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/clockify
+  direction: third-party
+  category: Time Tracking Software
+  partner_url: https://clockify.me/
+- partner_name: Google Forms
+  partner: google-forms
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/google-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: http://google.com/
+- partner_name: Dropbox
+  partner: dropbox
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/dropbox
+  direction: third-party
+  category: File Management & Storage
+  partner_url: https://dropbox.com/
+- partner_name: Dubsado
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/dubsado
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://www.dubsado.com/
+- partner_name: FreshBooks
+  partner: freshbooks
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/freshbooks
+  direction: third-party
+  category: Accounting
+  partner_url: https://www.freshbooks.com/?ref=10350
+- partner_name: Todoist
+  partner: todoist
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/todoist
+  direction: third-party
+  category: Task Management
+  partner_url: https://todoist.com/
+- partner_name: Copper
+  partner: copper
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/copper
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://copper.com/?utm_source=zapier&utm_medium=zapier
+- partner_name: Meisterplan
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/meisterplan
+  direction: third-party
+  category: Project Management
+  partner_url: https://meisterplan.com/
+- partner_name: Wrike
+  partner: wrike
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/wrike
+  direction: third-party
+  category: Project Management
+  partner_url: http://www.wrike.com/
+- partner_name: Podio
+  partner: podio
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/podio
+  direction: third-party
+  category: Project Management
+  partner_url: https://podio.com/
+- partner_name: Bokio
+  partner: bokio
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/harvest/integrations/bokio
+  direction: third-party
+  category: Accounting
+  partner_url: https://bokio.se/
+templates:
+- title: Create timesheet entries in Harvest when Google Calendar events start
+  url: https://zapier.com/apps/google-calendar/integrations/harvest/4390/create-timesheet-entries-in-harvest-when-google-calendar-events-start
+  apps:
+  - google-calendar
+  - harvest
+- title: Create Harvest projects from new Asana projects
+  url: https://zapier.com/apps/asana/integrations/harvest/4386/create-harvest-projects-from-new-asana-projects
+  apps:
+  - asana
+  - harvest
+- title: Add new Outlign projects to Harvest
+  url: https://zapier.com/apps/harvest/integrations/outlign/255645289/add-new-outlign-projects-to-harvest
+  apps:
+  - outlign
+  - harvest
+- title: Create Google Sheets rows for new Harvest time entries
+  url: https://zapier.com/apps/google-sheets/integrations/harvest/1215432/create-google-sheets-rows-for-new-harvest-time-entries
+  apps:
+  - harvest
+  - google-sheets
+- title: Create new Harvest projects for every new project in Outlign
+  url: https://zapier.com/apps/harvest/integrations/outlign/255660665/create-new-harvest-projects-for-every-new-project-in-outlign
+  apps:
+  - outlign
+  - harvest
+- title: Create spreadsheet rows in Google Sheets for new Harvest projects
+  url: https://zapier.com/apps/google-sheets/integrations/harvest/1238020/create-spreadsheet-rows-in-google-sheets-for-new-harvest-projects
+  apps:
+  - harvest
+  - google-sheets
+- title: Create projects in Harvest from new Podio items
+  url: https://zapier.com/apps/harvest/integrations/podio/4486/create-projects-in-harvest-from-new-podio-items
+  apps:
+  - podio
+  - harvest
+- title: Create new Notion database items from sent Harvest invoices
+  url: https://zapier.com/apps/harvest/integrations/notion/1661922/create-new-notion-database-items-from-sent-harvest-invoices
+  apps:
+  - harvest
+  - notion
+- title: Create new Capsule CRM contacts from new clients in Harvest
+  url: https://zapier.com/apps/capsulecrm/integrations/harvest/1662548/create-new-capsule-crm-contacts-from-new-clients-in-harvest
+  apps:
+  - harvest
+  - capsulecrm
+- title: Create new Harvest projects for every new Harvest client
+  url: https://zapier.com/apps/harvest/integrations/harvest/1399432/create-new-harvest-projects-for-every-new-harvest-client
+  apps:
+  - harvest
+- title: Create Harvest projects from new NetSuite records
+  url: https://zapier.com/apps/harvest/integrations/netsuite/1813046/create-harvest-projects-from-new-netsuite-records
+  apps:
+  - netsuite
+  - harvest
+- title: Create Google Sheets rows for new Harvest invoices
+  url: https://zapier.com/apps/google-sheets/integrations/harvest/1391911/create-google-sheets-rows-for-new-harvest-invoices
+  apps:
+  - harvest
+  - google-sheets
+template_total: 494
