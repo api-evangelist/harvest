@@ -103,7 +103,6 @@
   arazzo: null
 - slug: harvest-monday-com
   label: monday.com
-  partner: monday-com
   partner_name: monday.com
   category: Project Management
   type: marketplace
@@ -111,7 +110,7 @@
   channel: ipaas-usage
   evidence: https://zapier.com/apps/harvest/integrations/monday
   source: edge
-  status: pending-generation
+  status: pending-partner-spec
   arazzo: null
 - slug: harvest-clickup
   label: ClickUp
@@ -396,4 +395,16 @@
   evidence: https://zapier.com/apps/harvest/integrations/bokio
   source: edge
   status: pending-generation
+  arazzo: null
+- slug: harvest-atlassian-marketplace
+  label: Atlassian Marketplace
+  partner: atlassian
+  partner_name: Atlassian Marketplace
+  type: marketplace
+  marketplace: atlassian
+  channel: partner-built
+  evidence: https://marketplace.atlassian.com/vendors/1210921/harvest
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
   arazzo: null

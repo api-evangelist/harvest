@@ -6,6 +6,7 @@ source:
 - https://composio.dev/toolkits/harvest
 checked:
 - https://composio.dev/toolkits/harvest
+- https://marketplace.atlassian.com/
 - https://monid.ai/tools/harvest
 - https://n8n.io/integrations/harvest/
 - https://zapier.com/apps/harvest/integrations
@@ -937,6 +938,21 @@ edges:
   direction: third-party
   category: Accounting
   partner_url: https://bokio.se/
+- partner_name: Atlassian Marketplace
+  partner: atlassian
+  partner_match: aggregator
+  type: marketplace
+  marketplace: atlassian
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  evidence: https://marketplace.atlassian.com/vendors/1210921/harvest
+  listing_count: 1
+  apps:
+  - Harvest Time Tracking (Official)
+  publisher_name: Harvest
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
 templates:
 - title: Create timesheet entries in Harvest when Google Calendar events start
   url: https://zapier.com/apps/google-calendar/integrations/harvest/4390/create-timesheet-entries-in-harvest-when-google-calendar-events-start
