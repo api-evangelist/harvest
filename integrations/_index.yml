@@ -408,3 +408,16 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: harvest-xero-own
+  label: Xero (own)
+  partner: xero
+  partner_name: Xero (own)
+  category: Invoicing and jobs
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://apps.xero.com/us/app/harvest
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null

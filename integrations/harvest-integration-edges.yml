@@ -10,6 +10,7 @@ checked:
 - https://monid.ai/tools/harvest
 - https://n8n.io/integrations/harvest/
 - https://zapier.com/apps/harvest/integrations
+- xero/integrations/xero-integration-edges.yml
 summary: null
 marketplace_apps:
 - marketplace: zapier
@@ -953,6 +954,23 @@ edges:
   publisher_name: Harvest
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
+- partner_name: Xero (own)
+  partner: xero
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://apps.xero.com/us/app/harvest
+  mirror_of: xero/integrations/xero-integration-edges.yml
+  apps:
+  - Harvest
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Invoicing and jobs
 templates:
 - title: Create timesheet entries in Harvest when Google Calendar events start
   url: https://zapier.com/apps/google-calendar/integrations/harvest/4390/create-timesheet-entries-in-harvest-when-google-calendar-events-start
