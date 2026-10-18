@@ -5,6 +5,7 @@ source:
 - https://n8n.io/integrations/harvest/
 - https://composio.dev/toolkits/harvest
 checked:
+- google-workspace/integrations/google-workspace-integration-edges.yml
 - https://composio.dev/toolkits/harvest
 - https://fivetran.com/docs-sitemap.xml
 - https://fivetran.com/docs/connectors/partner-built-program
@@ -16,6 +17,7 @@ checked:
 - https://n8n.io/integrations/harvest/
 - https://zapier.com/api/v4/apps/
 - https://zapier.com/apps/harvest/integrations
+- slack/integrations/slack-integration-edges.yml
 - xero/integrations/xero-integration-edges.yml
 summary: null
 marketplace_apps:
@@ -1116,6 +1118,40 @@ edges:
     builder: 'community (Meltano Hub variant maintainers: airbyte, assembleinc, singer-io)'
   detected_by: sweep-data-integration.py
   first_seen: '2026-10-18'
+- partner_name: Google Workspace (own)
+  partner: google-workspace
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://workspace.google.com/marketplace/app/harvest/168610159629
+  mirror_of: google-workspace/integrations/google-workspace-integration-edges.yml
+  apps:
+  - Harvest
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Google Workspace app
+- partner_name: Slack (own)
+  partner: slack
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://slack.com/marketplace/A5CB98DK4-harvest
+  mirror_of: slack/integrations/slack-integration-edges.yml
+  apps:
+  - Harvest
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Slack app
 templates:
 - title: Create timesheet entries in Harvest when Google Calendar events start
   url: https://zapier.com/apps/google-calendar/integrations/harvest/4390/create-timesheet-entries-in-harvest-when-google-calendar-events-start
