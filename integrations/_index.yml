@@ -521,7 +521,7 @@
     - connectors/applications/harvest
     vendor_link: https://www.getharvest.com/
     builder: Fivetran
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: harvest-meltano
   label: Meltano
@@ -558,7 +558,7 @@
     - silver
     - unknown
     builder: 'community (Meltano Hub variant maintainers: airbyte, assembleinc, singer-io)'
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: harvest-google-workspace-own
   label: Google Workspace (own)
