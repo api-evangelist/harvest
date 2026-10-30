@@ -1,4 +1,4 @@
-# Harvest (harvest)
+# Harvest
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,66 +66,139 @@
 
 Harvest is a cloud-based time tracking, project management, expense tracking, and invoicing platform used by agencies, consultancies, and professional services teams to track billable hours, manage budgets, and bill clients. The platform provides reporting on team utilization, project profitability, and budget burn, and integrates with tools like Asana, Trello, Slack, and QuickBooks. Harvest's REST API v2 provides full programmatic access to clients, projects, tasks, time entries, expenses, invoices, estimates, and users using OAuth 2.0 or Personal Access Token authentication.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/harvest/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/harvest/refs/heads/main/apis.yml)
+**Areas:** Time Tracking · Project Management · Invoicing · Expense Tracking · Timesheets · Professional Services · Harvest
 
-## Scope
+## Harvest on APIs.io
 
-- **Type:** Index
+Everything profiled for Harvest is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/harvest/](https://apis.io/providers/harvest/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (12)
 
-- Time Tracking
-- Project Management
-- Invoicing
-- Expense Tracking
-- Timesheets
-- Professional Services
+- [Harvest API v2](https://apis.io/apis/harvest/api-v2/) — REST API for managing clients, projects, tasks, time entries, expenses, invoices, estimates, and users in Harvest. Supports OAuth 2.0 and Personal Access…
+- [Harvest Clients API](https://apis.io/apis/harvest/harvest-clients-api/) — The Clients API from Harvest — 2 operation(s) for clients.
+- [Harvest Company API](https://apis.io/apis/harvest/harvest-company-api/) — The Company API from Harvest — 1 operation(s) for company.
+- [Harvest Estimates API](https://apis.io/apis/harvest/harvest-estimates-api/) — The Estimates API from Harvest — 2 operation(s) for estimates.
+- [Harvest Expenses API](https://apis.io/apis/harvest/harvest-expenses-api/) — The Expenses API from Harvest — 2 operation(s) for expenses.
+- [Harvest Invoices API](https://apis.io/apis/harvest/harvest-invoices-api/) — The Invoices API from Harvest — 2 operation(s) for invoices.
+- [Harvest Projects API](https://apis.io/apis/harvest/harvest-projects-api/) — The Projects API from Harvest — 2 operation(s) for projects.
+- [Harvest Reports API](https://apis.io/apis/harvest/harvest-reports-api/) — The Reports API from Harvest — 4 operation(s) for reports.
+- [Harvest Roles API](https://apis.io/apis/harvest/harvest-roles-api/) — The Roles API from Harvest — 2 operation(s) for roles.
+- [Harvest Tasks API](https://apis.io/apis/harvest/harvest-tasks-api/) — The Tasks API from Harvest — 2 operation(s) for tasks.
+- [Harvest Users API](https://apis.io/apis/harvest/harvest-users-api/) — The Users API from Harvest — 3 operation(s) for users.
+- [Harvest Time Entries API](https://apis.io/apis/harvest/harvest-time-entries-api/) — The Time Entries API from Harvest — 5 operation(s) for time entries.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-11
-- **Modified:** 2026-05-11
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Harvest API v2
+Which operations an agent can call, which act, and which need a human in the loop.
 
-REST API for managing clients, projects, tasks, time entries, expenses, invoices, estimates, and users in Harvest. Supports OAuth 2.0 and Personal Access Token authentication, requires a Harvest-Account-Id header, and uses standard JSON request/response over HTTPS.
+- [Harvest Agentic Access](https://apis.io/agentic-access/harvest/harvest-agentic-access/)
 
-- **Human URL:** [https://help.getharvest.com/api-v2/](https://help.getharvest.com/api-v2/)
-- **Base URL:** `https://api.harvestapp.com/v2`
+#### Collections (12)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Time Tracking
-- Project Management
-- Invoicing
-- Expense Tracking
-- Timesheets
-- OAuth 2.0
-- Personal Access Token
+- [Harvest API v2](https://apis.io/collections/harvest/open-harvest/)
+- [Harvest API v2 Clients API](https://apis.io/collections/harvest/open-harvest-clients-api/)
+- [Harvest API v2 Clients Company API](https://apis.io/collections/harvest/open-harvest-company-api/)
+- [Harvest API v2 Clients Estimates API](https://apis.io/collections/harvest/open-harvest-estimates-api/)
+- [Harvest API v2 Clients Expenses API](https://apis.io/collections/harvest/open-harvest-expenses-api/)
+- [Harvest API v2 Clients Invoices API](https://apis.io/collections/harvest/open-harvest-invoices-api/)
+- [Harvest API v2 Clients Projects API](https://apis.io/collections/harvest/open-harvest-projects-api/)
+- [Harvest API v2 Clients Reports API](https://apis.io/collections/harvest/open-harvest-reports-api/)
+- [Harvest API v2 Clients Roles API](https://apis.io/collections/harvest/open-harvest-roles-api/)
+- [Harvest API v2 Clients Tasks API](https://apis.io/collections/harvest/open-harvest-tasks-api/)
+- [Harvest API v2 Clients TimeEntries API](https://apis.io/collections/harvest/open-harvest-timeentries-api/)
+- [Harvest API v2 Clients Users API](https://apis.io/collections/harvest/open-harvest-users-api/)
 
-#### Properties
+#### Security (4)
 
-- [Documentation](https://help.getharvest.com/api-v2/)
-- [Authentication](https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/)
-- [Overview](https://help.getharvest.com/api-v2/introduction/overview/general/)
-- [Postman Collection](collections/harvest.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/harvest.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Harvest Authentication](https://apis.io/security/harvest/harvest-authentication/)
+- [Harvest Domain Security](https://apis.io/security/harvest/harvest-domain-security/)
+- [Harvest Trust Center](https://apis.io/security/harvest/harvest-trust-center/)
+- [Harvest Vulnerability Disclosure](https://apis.io/security/harvest/harvest-vulnerability-disclosure/)
+
+#### Plans and pricing (2)
+
+Published plans, tiers and prices.
+
+- [Harvest Plans Pricing](https://apis.io/plans/harvest/harvest-plans-pricing/)
+- [Harvest Price Estimates](https://apis.io/plans/harvest/harvest-price-estimates/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Harvest Rate Limits](https://apis.io/rate-limits/harvest/harvest-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.getharvest.com)
 - [Documentation](https://help.getharvest.com/api-v2/)
 - [Pricing](https://www.getharvest.com/pricing)
-- [Sign Up](https://id.getharvest.com/signup)
-- [Blog](https://www.getharvest.com/blog)
 - [Support](https://help.getharvest.com)
-- [Status Page](https://www.harveststatus.com)
-- [GitHub Organization](https://github.com/harvesthq)
-- [LinkedIn](https://www.linkedin.com/company/harvest)
+- [Blog](https://www.getharvest.com/blog)
+- [GitHub](https://github.com/harvesthq)
+- [Status](https://www.harveststatus.com)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 44.0** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 48.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 50.0 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 63.2 |
+
+**Agent readiness 21.5** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 22.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/harvest/](https://apis.io/providers/harvest/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Harvest: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/harvest/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
